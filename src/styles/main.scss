@@ -1,0 +1,171 @@
+@import 'compass/css3/border-radius';
+@import 'compass/css3/text-shadow';
+@import 'compass/css3/box-shadow';
+@import 'normalize.css';
+@import 'solarized-dark.css';
+
+@mixin breakpoint($point) {
+  @if $point == big-phone {
+    @media (max-width: 1000px) { @content; }
+  }
+  @else if $point == small-phone {
+    @media (max-width: 630px)  { @content; }
+  }
+}
+
+$brown: hsl(13, 13%, 29%);
+$codeFont: Consolas, "Lucida Console", monospace;
+
+
+html {
+  background: hsl(0, 0%, 70%);
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: Helvetica;
+  box-shadow: 0 2px 2px 3px hsla(0, 0%, 0%, 0.1);
+  overflow-x:hidden;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-size: 16px;
+  @include breakpoint(big-phone) {
+    font-size: 14px;
+  }
+}
+
+
+header {
+  display: block;
+  margin: 0 0 0 80px;
+  z-index: 10;
+  position: absolute;
+  padding: 20px 0;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  h1 {
+    margin: 0;
+    float: left;
+    font-size: 4em;
+  }
+
+  a {
+    color: white;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.nav {
+  @include breakpoint(big-phone) {
+    display: none;
+  }
+  list-style: none;
+  margin: 0;
+
+  li {
+    float: left;
+    padding: .9em 0 0 1.7em;
+    font-size: 2em;
+  }
+}
+
+.scene-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+}
+.cabin-scene {
+  background: hsl(240, 100%, 10%);
+  top:0;
+  overflow: hidden;
+  width: 1600px;
+  margin-top: -10px;
+  height: 477px;
+  left: 50%;
+  position: absolute;
+  margin-left: -800px;
+}
+
+.cabin-compontent {
+  position: absolute;
+  top: 0px;
+  width: 104%;
+  margin: 0 -2%;
+}
+
+
+.content {
+  box-shadow: 0 -2px 2px 0 hsla(0, 0%, 0%, 0.1);
+  padding: 20px 0 90px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.content-center {
+  width: 840px;
+  margin: 0 auto;
+
+  @include breakpoint(big-phone) {
+    width: 92%;
+    margin-left: 4%;
+  }
+
+  p {
+    line-height: 1.6em;
+    font-size: 1.3em;
+  }
+
+  a {
+    color: hsl(202, 82%, 59%);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+p code {
+  background: hsl(240, 100%, 96%);
+  border: 1px solid hsl(0, 0%, 90%);
+  padding: 0 0.23em;
+  @include border-radius(3px);
+  font-size: .8em;
+}
+
+code {
+  margin: 0;
+  padding: 0;
+  font-family: $codeFont;
+}
+
+pre {
+  font-family: $codeFont;
+  overflow: auto;
+}
+
+.highlight {
+  @include border-radius(3px);
+  font-size: 1.1em;
+  line-height: 1.5em;
+
+  pre {
+    padding: 15px;
+  }
+}
+
+blockquote {
+  border-left: 4px solid hsl(0, 0%, 87%);
+  padding: 0 15px;
+  color: hsl(0, 0%, 47%);
+}
+

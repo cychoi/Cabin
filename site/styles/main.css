@@ -1,0 +1,184 @@
+@import url(normalize.css);
+@import url(solarized-dark.css);
+/* line 20, ../../src/styles/main.scss */
+html {
+  background: #b3b3b3;
+}
+
+/* line 24, ../../src/styles/main.scss */
+body {
+  position: relative;
+  margin: 0;
+  font-family: Helvetica;
+  box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+@media (max-width: 1000px) {
+  /* line 24, ../../src/styles/main.scss */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* line 39, ../../src/styles/main.scss */
+header {
+  display: block;
+  margin: 0 0 0 80px;
+  z-index: 10;
+  position: absolute;
+  padding: 20px 0;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+/* line 49, ../../src/styles/main.scss */
+header h1 {
+  margin: 0;
+  float: left;
+  font-size: 4em;
+}
+/* line 55, ../../src/styles/main.scss */
+header a {
+  color: white;
+  text-shadow: 1px 1px black;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 60, ../../src/styles/main.scss */
+header a:hover {
+  text-decoration: underline;
+}
+
+/* line 66, ../../src/styles/main.scss */
+.nav {
+  list-style: none;
+  margin: 0;
+}
+@media (max-width: 1000px) {
+  /* line 66, ../../src/styles/main.scss */
+  .nav {
+    display: none;
+  }
+}
+/* line 73, ../../src/styles/main.scss */
+.nav li {
+  float: left;
+  padding: 0.9em 0 0 1.7em;
+  font-size: 2em;
+}
+
+/* line 80, ../../src/styles/main.scss */
+.scene-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+}
+
+/* line 86, ../../src/styles/main.scss */
+.cabin-scene {
+  background: #000033;
+  top: 0;
+  overflow: hidden;
+  width: 1600px;
+  margin-top: -10px;
+  height: 477px;
+  left: 50%;
+  position: absolute;
+  margin-left: -800px;
+}
+
+/* line 98, ../../src/styles/main.scss */
+.cabin-compontent {
+  position: absolute;
+  top: 0px;
+  width: 104%;
+  margin: 0 -2%;
+}
+
+/* line 106, ../../src/styles/main.scss */
+.content {
+  box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 0 90px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+/* line 114, ../../src/styles/main.scss */
+.content-center {
+  width: 840px;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  /* line 114, ../../src/styles/main.scss */
+  .content-center {
+    width: 92%;
+    margin-left: 4%;
+  }
+}
+/* line 123, ../../src/styles/main.scss */
+.content-center p {
+  line-height: 1.6em;
+  font-size: 1.3em;
+}
+/* line 128, ../../src/styles/main.scss */
+.content-center a {
+  color: #41adec;
+  text-decoration: none;
+}
+/* line 131, ../../src/styles/main.scss */
+.content-center a:hover {
+  text-decoration: underline;
+}
+
+/* line 137, ../../src/styles/main.scss */
+p code {
+  background: #ebebff;
+  border: 1px solid #e6e6e6;
+  padding: 0 0.23em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: .8em;
+}
+
+/* line 145, ../../src/styles/main.scss */
+code {
+  margin: 0;
+  padding: 0;
+  font-family: Consolas, "Lucida Console", monospace;
+}
+
+/* line 151, ../../src/styles/main.scss */
+pre {
+  font-family: Consolas, "Lucida Console", monospace;
+  overflow: auto;
+}
+
+/* line 156, ../../src/styles/main.scss */
+.highlight {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+/* line 161, ../../src/styles/main.scss */
+.highlight pre {
+  padding: 15px;
+}
+
+/* line 166, ../../src/styles/main.scss */
+blockquote {
+  border-left: 4px solid #dedede;
+  padding: 0 15px;
+  color: #787878;
+}
