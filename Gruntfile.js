@@ -20,7 +20,7 @@ module.exports = function (grunt) {
         tasks: ['pages']
       },
       images: {
-        files: ['*.ico', '.htacess', 'src/images/*'],
+        files: ['*.ico', '.htacess', 'src/images/*', 'src/styles/*.css', 'src/scripts/*'],
         tasks: ['copy']
       }
     },
@@ -78,7 +78,9 @@ module.exports = function (grunt) {
           src: [
             '*.ico',
             '.htaccess',
-            'images/{,*/}*'
+            'images/{,*/}*',
+            'scripts/{,*/}*',
+            'styles/{,*/}*.css'
           ]
         }]
       }
@@ -87,6 +89,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean',
+    'compass',
     'compass',
     'pages',
     'copy'
