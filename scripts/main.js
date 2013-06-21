@@ -1,0 +1,6 @@
+//$('.moon').plaxify({"xRange":3,"yRange":3})
+$('.house').plaxify({"xRange":5,"yRange":5, invert: true})
+$('.hill1').plaxify({"xRange":25,"yRange":20, invert: true})
+$('.hill2').plaxify({"xRange":40,"yRange":30})
+$('.hill3').plaxify({"xRange":65,"yRange":45})
+$.plax.enable()
