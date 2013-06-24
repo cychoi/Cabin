@@ -14,7 +14,7 @@ You can then scaffold a static generator with the following command:
 ```bash
 cabin new <destination folder> [user/repo]
 ```
-The first parameter is the name of the destination folder, and the second is the GitHub username and repository name of a `theme` to use for the site. If the `theme` parameter is left blank, the [default theme](https://github.com/colinwren/testTheme) will be used.
+The first parameter is the name of the destination folder, and the second is the GitHub username and repository name of a `theme` to use for the site. If the `theme` parameter is left blank, the [default theme](http://colinwren.github.io/Candy/) will be used.
 
 After scaffolding a site generator, you can run it by entering the following command in the destination folder:
 ```bash
@@ -25,7 +25,7 @@ Cabin themes provide styling and structure for your static site project. They wo
 
 ## Avaliable Themes
 
-### [colinwren/Candy](https://github.com/colinwren/Candy)
+### [colinwren/Candy](http://colinwren.github.io/Candy/)
 > Slick blogging theme, great for use on personal sites
 
 ### [ChrisWren/icoDoc](http://chriswren.github.io/icoDoc/)
