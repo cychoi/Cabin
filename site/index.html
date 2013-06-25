@@ -22,30 +22,39 @@
       <div class="cabin-scene"><img src="images/hill3.png" class="cabin-compontent hill3"><img src="images/hill2.png" class="cabin-compontent hill2"><img src="images/hill1.png" class="cabin-compontent hill1"><img src="images/house.png" class="cabin-compontent house"></div>
     </div>
     <div class="content">
-      <div class="content-center"><p>Cabin is a CLI tool that scaffolds out a <a href="http://gruntjs.com/">Grunt</a> powered static site generator.</p>
-<a name="getting-started" class="anchor" target="#getting-started"></a><h1>Getting Started</h1>
-<p>First install cabin globally with the following command:</p>
-<pre><code class="lang-bash"><div class="highlight"><pre>npm install -g cabin
-</pre></div>
-</code></pre>
-<p>You can then scaffold a static generator with the following command:</p>
-<pre><code class="lang-bash"><div class="highlight"><pre>cabin new &lt;destination folder&gt; <span class="o">[</span>user/repo<span class="o">]</span>
-</pre></div>
-</code></pre>
-<p>The first parameter is the name of the destination folder, and the second is the GitHub username and repository name of a <code>theme</code> to use for the site. If the <code>theme</code> parameter is left blank, the <a href="http://colinwren.github.io/Candy/">default theme</a> will be used.</p>
-<p>After scaffolding a site generator, you can run it by entering the following command in the destination folder:</p>
-<pre><code class="lang-bash"><div class="highlight"><pre>grunt server
-</pre></div>
-</code></pre>
-<a name="themes" class="anchor" target="#themes"></a><h1>Themes</h1>
-<p>Cabin themes provide styling and structure for your static site project. They work great out of the box and as starting points for more customized sites.</p>
-<a name="avaliable-themes" class="anchor" target="#avaliable-themes"></a><h2>Avaliable Themes</h2>
-<a name="-colinwren-candy--http:--colinwren.github.io-candy--" class="anchor" target="#-colinwren-candy--http:--colinwren.github.io-candy--"></a><h3><a href="http://colinwren.github.io/Candy/">colinwren/Candy</a></h3>
-<blockquote>
+      <div class="content-center"><p>Cabin is a simple and extensible static site generator powered by <a href="http://gruntjs.com/">Grunt</a>.</p>
+<a name="getting-started" class="anchor" href="#getting-started"><h1>Getting Started</h1>
+</a><p>First install cabin globally with the following command:
+<code>bash
+npm install -g cabin</code>
+You can then scaffold a static generator with the following command:
+<code>bash
+cabin new &lt;destination folder&gt; [user/repo]</code>
+The first parameter is the name of the destination folder, and the second is
+the GitHub username and repository name of a <code>theme</code> to use for the site. If
+the <code>theme</code> parameter is left blank, the <a href="https://github.com/colinwren/testTheme">default
+theme</a> will be used.</p>
+<p>After scaffolding a site generator, you can run it by entering the following
+command in the destination folder:
+<code>bash
+grunt</code>
+This will build your site, start a static file server, open a browser tab with
+the site&#39;s homepage, and start a watch process to rebuild your site when your
+source files change. Try editing or creating a new markdown file in the <code>posts</code>
+folder (if you are using the default theme) and upon save your site will be
+automatically rebuilt. Refresh the page to see the changes, if you&#39;d like
+Livereload functionality, you can use the Livereload <a href="http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-">browser
+extensions</a>.</p>
+<a name="themes" class="anchor" href="#themes"><h1>Themes</h1>
+</a><p>Cabin themes provide styling and structure for your static site project. They
+work great out of the box and as starting points for more customized sites.</p>
+<a name="avaliable-themes" class="anchor" href="#avaliable-themes"><h2>Avaliable Themes</h2>
+</a><a name="-colinwren-candy--http:--colinwren.github.io-candy--" class="anchor" href="#-colinwren-candy--http:--colinwren.github.io-candy--"><h3><a href="http://colinwren.github.io/Candy/">colinwren/Candy</a></h3>
+</a><blockquote>
 <p>Slick blogging theme, great for use on personal sites</p>
 </blockquote>
-<a name="-chriswren-icodoc--http:--chriswren.github.io-icodoc--" class="anchor" target="#-chriswren-icodoc--http:--chriswren.github.io-icodoc--"></a><h3><a href="http://chriswren.github.io/icoDoc/">ChrisWren/icoDoc</a></h3>
-<blockquote>
+<a name="-chriswren-icodoc--http:--chriswren.github.io-icodoc--" class="anchor" href="#-chriswren-icodoc--http:--chriswren.github.io-icodoc--"><h3><a href="http://chriswren.github.io/icoDoc/">ChrisWren/icoDoc</a></h3>
+</a><blockquote>
 <p>Minimalist project documentation theme using icons in the navigation</p>
 </blockquote>
 </div>
